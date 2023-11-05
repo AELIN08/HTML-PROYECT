@@ -1,0 +1,347 @@
+/*
+    selector  {
+
+        propiedad: valor
+
+    }
+*/
+
+body{
+    /* margen del elemento */
+    margin: 0;
+    /* "margen" hacia adentro */
+    padding: 0;
+    /*cambiar el color del fondo*/
+    background-color:white;
+    /*cambio del color del texto*/
+    color: black;
+    /*cambiar fuente del texto*/
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*  *********************************************  */
+/* NAVEGACION */
+
+header{
+    /* ancho */
+    width: 100%; 
+    /* alto */
+    height: 70px;
+
+    background-image: url(https://i.pinimg.com/564x/b8/44/3e/b8443e021dc1375c8210498f229bd966.jpg);
+    padding-top: 5px;
+    position: fixed;
+}
+header nav{
+    width: 70px;
+    height: auto;
+    margin-left:1030px;
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: center;
+}
+nav .nav-right-section{
+    display: flex;
+    justify-content: flex-end;
+    /* Centrado verticalmente */
+    align-items: center;
+    /* Eliminar puntitos */
+    list-style: none;
+    
+}
+
+nav .nav-right-section img{
+    /*para que las imagenes no se repitan*/
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left:30px;
+    /*para quitar el fonfo blanco de las imagenes*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+/*  *********************************************  */
+/* MAIN */
+main{
+    width: 100%;
+    height:auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+main .main-container-menu{
+    /*agregar espacio entre el hedader y main*/
+    width: 20%;
+    height:100%;
+    padding-top: 50px;
+    background-image: url(https://i.pinimg.com/564x/b8/44/3e/b8443e021dc1375c8210498f229bd966.jpg);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column ;
+    position: fixed;
+    color: black;
+
+}
+main .container-Menu{
+    height:auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+     /* Eliminar línea debajo de texto */
+     text-decoration: none;
+     color: black;
+}
+.container-Menu .Fecha{
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center ;
+}
+
+main .container-Tableros{
+    width: 100%;
+    height:auto;
+    margin-bottom:198px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+a{
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+    color: black;
+}
+
+main .main-principal{
+    width: 80%;
+    height:auto;
+    /*agregar espacio entre el hedader y main*/
+    margin-top: 60px;
+    margin-left:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    margin-left: 140px;
+    font-size: 60px;
+    color:#f87887 ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+p1{
+    margin-left: 140px;
+    font-size:12px;
+
+}
+p2{
+    margin-left: 140px;
+    padding-top: 0px;
+    font-size:10px;
+}
+.main-principal .sorpresa{
+    width: 400px;
+    height:auto;
+}
+.p-items-container{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+
+h4{
+    font-size:14px;
+    color:#b34c6e;
+}
+.c-p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* Eliminar puntitos */
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.c-p .i-p{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*para quitar el fonfo blanco de las imagenes*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+h3{
+    font-size: 20px;
+    color: #facd74;
+}
+main li{
+    font-size:14px;
+}
+
+.presentacion img{
+    width: 400px;
+    height:auto;
+}
+p{
+    font-size:14px;
+}
+.c-t1{
+    background-color: #f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px ;
+}
+
+.c-t2{
+    background-color:#caf3aa;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px 
+}
+.c-t2-c{
+    background-color:#f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px 
+}
+
+.c-t3{
+    background-color: #f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px;
+
+}
+.c-t3-c{
+    width: 300px;
+    height: 180px;
+    background-color: #caf3aa;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.c-t4{
+    background-color: #f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px ;
+}
+
+.c-t5{
+
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px ;
+
+}
+
+.c-t6{
+    background-color: #f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px ;
+
+}
+
+.container-linelife{
+    width: 300px;
+    background-color: #caf3aa;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px;
+    display: flex;
+
+}
+.agregar{
+    width: 40px;
+    height:auto;
+}
+.input-container1{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border-radius: 50px;
+    border-color: transparent;
+    border-radius: 20px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center
+}
+.c-t7{
+    background-color: #f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px ;
+
+}
+.c-t8{
+    background-color: #f87887cc;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    /*redondear bordes*/
+    border-radius: 20px ;
+
+}
+.container-foda{
+    background-color: #caf3aa;
+    border-radius: 20px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas:
+      "a  b"
+      "c  d";
+    align-items: start;
+
+}
+.Fortalezas{
+    grid-area: a;
+}
+.oportunidades{
+    grid-area: b;
+}
+.Debilidades{
+    grid-area: c;
+}
+.Amenazas{
+    grid-area: d;
+}
+.form{
+    background-color:#facd74;
+    border-radius: 20px ;
+    margin-top:70px ;
+}
+
+footer{
+    width: 90%;
+    height:auto;
+    /*agregar espacio entre el hedader y main*/
+    margin-top: 60px;
+    margin-left:15%;
+    display: flex;
+    justify-content:center;
+    background-color: rgba(169, 169, 169, 0.322);
+}

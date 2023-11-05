@@ -1,0 +1,301 @@
+<!-- html:5 para crear un esqueleto-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--METADATA DEL NAVEGADOR -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de la pestaña del navegador-->
+    <title>Proyecto</title>
+
+    <!--CONEXION CON CSS - relacion de este documento-->
+    <link rel="stylesheet" href="/style.css">
+
+    <!--insertar fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<!-- LO QUE VE EL USUARIO -->
+<body>
+    <!-- HEADER-->
+    <header>
+        <nav>
+            <ul class="nav-right-section">
+                <li>
+                    <a href=""></a>
+                    <img src="images/us.png" alt="">
+                </li>
+                <li>
+                    <a href=""></a>
+                    <img src="images/notificaciones.png" alt="">
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- MAIN - caja que agrupo elementos-->
+    <main>
+        <!--MENÚ- NAVEGACION DE NUESTRA PAGINA WEB-->
+        <section class="main-container-menu">
+            <div class="container-Menu">
+                <h2>Menú</h2>
+                <a href="#Inicio">  Inicio  </a>
+                <a href="#nosotros"> Sobre nosotros   </a>
+                <div class="Fecha">
+                    <label for="start">Hoy:</label>
+                    <input type="date" name="trip-start" id="start" value="2023-11-01" min="1900-01-01" max="2050-01-01">
+                </div>
+
+            </div>
+            <div class="container-Tableros">
+                <h2>Tableros</h2>
+                <a href="#Diario"> Dia a Dia </a>
+                <a href="#Emociones"> Diario de emociones</a>
+                <a href="#Habitos"> Habitos</a>
+                <a href="#Objetivos"> Objetivos y Metas</a>
+                <a href="#Autoregulacion"> Autoregulación </a>
+                <a href="#linea de vida">Linea de vida</a>
+                <a href="#FODA"> FODA </a>
+                <a href="autoimagen"> Autoimagen </a>
+            </div>
+        </section>
+
+        <section class="main-principal">
+            <h1> INNER MAP </h1>
+            <p1>
+                ¿Quién soy? Es una pregunta que me he hecho toda la vida...
+            </p1>
+
+            <p2> Haz click en esta imagen para una sorpresa </p>
+            <!--ANCLA QUE NOS LLEVA A OTRO SITIO WEB -->
+            <a href="https://youtu.be/JtddJ_d8w3k">
+                <img class="sorpresa" src="/images/cat.jpg" alt="planeta ods 14">
+            </a>
+
+            <h3 id="Inicio"> PARA TI </h3>
+            <!--Listas-->
+            <!--Listas no ordenas-->
+            <div class="presentacion">
+                <ul class="p-items-container"> 
+                    <div class="c-p">
+                        <h4>¿POR QUE?</h4>
+                        <li>El camino del crecimiento personal empieza con el autoconocimiento.</li>
+
+                        <!-- IMG- a trevez de la we mediante el source (ruta de la imagen) -->
+                        <img class="i-p"src="https://static.vecteezy.com/system/resources/previews/025/441/474/non_2x/personal-growth-concept-tiny-woman-in-flowerpot-watering-herself-self-improvement-and-self-development-metaphor-growth-personality-as-plant-modern-flat-cartoon-style-illustration-vector.jpg" alt="somos una plantita">
+                    </div>
+                    <div class="c-p">
+                        <h4>AUTOCONOCIENTO</h4>
+                        <li>El autoconocimiento es aber quién soy, con qué recursos cuento, cuáles son mis virtudes, defectos y
+                            cualidades.
+                            Conocer las cosas que me gustan y las que me desagradan.</li>
+
+                        <!-- A travez de la computadora-->
+                        <img class="i-p" src="/images/autoconocimiento.png" alt="">
+                    </div>
+                    <div class="c-p">
+                        <h4>¿PARA QUE?</h4>
+                        <li>Conocerte te permitira vivir con mas conciencia sobre ti, sobre lo que te rodea y quienes te rodean, tus deciciones y quello por lo que quieres ser </li>
+
+                        <!-- A travez de la computadora-->
+                        <img class="i-p" src="/images/conciencia3.png" alt="">
+                    </div>
+                </ul>
+            </div>
+
+            <!--SECCIONES DE TEXTO-->
+            <!-- HEADERS- ENCABEZADOS-->
+
+            <h3 id="Diario" > Dia a dia </h3>
+            <p class="c-t1"> 
+                Un diario te permite revelar tus sentimientos y pensamientos, dicho de otra forma explorar tu propio mapa del alma y a partir de ahi ver como estos influyen en tu conduca y vicerveza.
+                -Tu deshagote, es para ti y de uso personal-
+            </p>
+
+            <h3 id="Emociones"> Diario de emociones</h3>
+            <p class="c-t2-c"> 
+                Por el miedo a una emoción estamos dispuestos a hacer casi cualquier cosa para evitarla y esto puede tener consecuencias bastante negativas a largo plazo (abuso de sustancias, por ejemplo). Pero un ejercicio muy saludable es no ignorar ni ocultar la emoción, sino escuchar lo que tiene para decir, es parte de la inteligencia emocional.
+            </p>
+            <!--FORMULARIO INPUT RADIO-->
+            <form class="c-t2">
+                <p>Hoy me siento...</p>
+                <!--NAME - para que las respuestas se asocien al mismo -->
+                <!--FOR - se asocia a casa respuesta individualmente-->
+                <label for="Feliz">
+                    <input type="checkbox" name="fell"> Feliz
+                </label>
+
+                <label for="Triste">
+                    <input type="checkbox" name="fell"> Triste
+                </label>
+
+                <label for="Enojad@">
+                    <input type="checkbox" name="fell"> Enojad@
+                </label>
+                <label for="Ansios@">
+                    <input type="checkbox" name="fell"> Ansios@
+                </label>
+            </form>
+
+            <h3 id="Habitos"> Habitos </h3>
+            <p class="c-t3">
+                Un habito es un comportamiento repetido. 5.	Los hábitos son base del crecimiento y desarrollo y se forman por medio de la repetición.
+                Piensa en tus hábitos ¿hay algunos que desearías romper o cambiar? 
+                <div class="c-t3-c">
+                    <ul>Reconoce el hábito como problemático.</ul>
+                    <ul>Decide cambiar.</ul>
+                    <ul>Empieza hoy.</ul>
+                    <ul>Cambia un hábito a la vez.</ul>
+                    <ul>Prémiate por los pasos positivos que logras.</ul>
+                    <ul>No te desanimes.</ul>
+                </div>
+            </p>
+
+            <h3 id="Autoregulacion">Autoregulación</h3>
+            <p class="c-t4"> 
+                Representa una meta que te permitirá enfrentar las situaciones que se presentan cada día.
+                Te permite tener el control de ti mismo y de las actividades que realizas, o sea autorregularte, es una habilidad que se puede desarrollar.
+            </p>
+
+            <h3 id="Objetivos"> Objetivos y Metas</h3>
+            <section class="c-t5">
+                <img class="c-t5-img" src="https://t3.ftcdn.net/jpg/03/74/90/28/360_F_374902851_Q3t4S1bDDSRUkjuxtiogq13heviB2FdJ.jpg" alt="">
+                <p>
+
+                </p>
+            </section>
+
+
+            <h3 id="Linea de vida">Linea de vida</h3>
+            <p class="c-t6">
+                Marca los eventos más importantes que te han pasado desde tu nacimiento hasta el presente. Estos eventos impactantes pueden ser grandes, pequeños, positivos o negativos.
+                A menudo, este pequeño ejercicio te ayuda a verte a ti mismo en contexto, y éste es clave para desarrollar tu autoconciencia.
+            </p>
+            <section class="container-linelife">
+                <div>
+                    <img class="agregar" src="https://cdn-icons-png.flaticon.com/512/4601/4601618.png" alt="">
+                </div>
+
+                <div class="input-container1">
+                    <div class="Fecha">
+                        <label for="start">Fecha:</label>
+                        <input type="date" name="trip-start" id="start" value="2023-11-01" min="1900-01-01" max="2050-01-01">
+                    </div>
+                    <!--ETIQUETA IDENTIFICACDORA FOR- IDENTIFICADOR DE FORMULARIO-->
+                    <label for="suceso"></label>
+                    <input type="text">
+                    <button class="button-send"> Enviar </button>
+                </div>
+    
+            </section>
+
+            <h3 id="Autoimagen">Autoimagen</h3>
+            <p class="c-t7">
+                La auto-imagen es la imagen que nuestro subconsciente tiene de nosotros mismos. Esta imagen manipula nuestra personalidad, comportamiento y es responsable de todo lo que somos en este momento.
+                <h4> Concepción o perspectiva del yo </h4>
+                <p class="c-t8">
+                    La autoimagen positiva tiene dos componentes.
+                    La autoestima es una percepción de que tu vales, la convicción de que tienes el poder de lograr cambios positivos en ti mismo y en tu entorno.
+                    La confianza en uno mismo es creer en ti, la convicción de que tienes el poder de lograr cambios positivos en ti y en tu entorno.
+                    
+                </p>
+            </p>
+
+
+            <h3 id="FODA">FODA</h3>
+            <section class="container-foda">
+                <div class="Fortalezas">
+                    <h4>Fortalezas</h4>
+                    <ul>
+                    <form>
+                            <label for="fort"></label>
+                            <input type="text">
+                            <button class="button-send"> Enviar </button>
+                    </form>
+                        
+                    </ul>
+                </div>
+                <div class="Oportunidades">
+                    <h4>Oportunidades</h4>
+                    <ul>
+                        <form>
+                            <label for="fort"></label>
+                            <input type="text">
+                            <button class="button-send"> Enviar </button>
+                        </form>
+                        
+                    </ul>
+                </div>
+                <div class="Debilidades">
+                    <h4>Debilidades</h4>
+                    <ul>
+                        <form>
+                            <label for="fort"></label>
+                            <input type="text">
+                            <button class="button-send"> Enviar </button>
+                        </form>
+                        
+                    </ul>
+                </div>
+                <div class="Amenazas">
+                    <h4>Amenazas</h4>
+                    <ul>
+                        <form>
+                            <label for="fort"></label>
+                            <input type="text">
+                            <button class="button-send"> Enviar </button>
+                        </form>
+                        
+                    </ul>
+                </div>
+            </section>
+
+
+            <br>
+
+            <!-- FORMULARIOS -->
+            <form class="form">
+                <!--FORMULARIO INPUT RADIO-->
+                <p>¿Como crees que vas con tu proceso?</p>
+                <!--NAME - para que las respuestas se asocien al mismo -->
+                <!--FOR - se asocia a casa respuesta individualmente-->
+                <label for="Increible">
+                    <input type="radio" name="proceso">Muy bien
+                </label>
+
+                <label for="no tanto">
+                    <input type="radio" name="proceso">Voy
+                </label>
+
+                <label for="ahi vamos">
+                    <input type="radio" name="proceso"> Es un proceso
+                </label>
+
+                <p>¿continuamos?</p>
+                <label for="si">
+                    <input type="radio" name="cont">SI
+                </label>
+                
+                <label for="no">
+                    <input type="radio" name="cont">Despues
+                </label>
+            </form>
+
+        </section>
+
+    </main>    
+    <footer>
+        <section class="section1" id="nosotros">
+            <ul>Nosotros somos todos aquellos que quieren verte feliz y realizad@</ul>
+            <ul>Proyecto que nacio del querer conocerme a mi misma</ul>
+        </section>
+        <section class="section2">
+            <ul> 2023 </ul>
+            <ul> México</ul>
+            <ul> Sonrie siempre </ul>
+            <ul> Tu puedes </ul>
+        </section>
+    </footer>
+</body>
+</html>
